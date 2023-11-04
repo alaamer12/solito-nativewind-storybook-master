@@ -1,0 +1,38 @@
+{
+  "name": "skedyul",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/react": "^18.2.21",
+    "@types/react-native": "^0.72.2",
+    "eslint": "^8.21.0",
+    "prettier": "^3",
+    "turbo": "^1.4.2",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "native": "cd apps/native && yarn start",
+    "web": "cd apps/web && yarn next",
+    "sb": "cd packages/app && yarn storybook"
+  },
+  "resolutions": {
+    "metro": "~0.76.7",
+    "metro-resolver": "~0.76.7",
+    "react-refresh": "~0.14.0",
+    "framer-motion": "^4.1.17"
+  },
+  "overrides": {
+    "metro": "~0.76.7",
+    "metro-resolver": "~0.76.7",
+    "react-refresh": "~0.14.0",
+    "framer-motion": "^4.1.17"
+  },
+  "nohoist": [
+    "**/expo-router",
+    "**/expo-router/**"
+  ],
+  "packageManager": "yarn@3.4.1"
+}
