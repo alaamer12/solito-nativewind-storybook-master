@@ -1,6 +1,7 @@
 import { A, H1, P, Text, TextLink } from 'app/design/typography'
 import { Row } from 'app/design/layout'
 import { View } from 'app/design/view'
+import { Text as NativeText } from 'react-native'
 
 import { MotiLink } from 'solito/moti'
 import { Card } from 'app/components/card'
@@ -15,7 +16,8 @@ export function HomeScreen() {
             Here is some content
           </P>
         </Card>
-        <P className="text-center">
+        <NativeText className='text-red-200 bg-red'>Here is some content</NativeText>
+        <P className="text-center text-blue-500 font-[Merriweather]">
           Here is a basic starter to show you how you can navigate from one
           screen to another. This screen uses the same code on Next.js and React
           Native.

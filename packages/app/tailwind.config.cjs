@@ -8,6 +8,6 @@ module.exports = {
   plugins: [require('nativewind/tailwind/css')],
   important: 'html',
   theme: {
-    ...theme,
+    // ...theme,
   },
 }

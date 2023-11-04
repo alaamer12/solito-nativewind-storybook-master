@@ -16,7 +16,8 @@
   "scripts": {
     "native": "cd apps/native && yarn start",
     "web": "cd apps/web && yarn next",
-    "sb": "cd packages/app && yarn storybook"
+    "sb": "cd packages/app && yarn storybook",
+    "tw": "cd packages/app && yarn tailwind"
   },
   "resolutions": {
     "metro": "~0.76.7",

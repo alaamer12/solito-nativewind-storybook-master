@@ -15,11 +15,14 @@ const config = {
     '../components/**/*.stories.@(js|jsx|mjs|ts|tsx)',
   ],
   addons: [
-    getAbsolutePath('@storybook/addon-links'),
     getAbsolutePath('@storybook/addon-essentials'),
+    getAbsolutePath('@storybook/addon-react-native-web'),
+    getAbsolutePath('@storybook/addon-links'),
     getAbsolutePath('@storybook/addon-onboarding'),
     getAbsolutePath('@storybook/addon-interactions'),
-    getAbsolutePath('@storybook/addon-react-native-web'),
+    getAbsolutePath('@storybook/addon-console'),
+    getAbsolutePath('storybook-addon-performance'),
+    getAbsolutePath('@storybook/addon-postcss'),
     {
       name: '@storybook/addon-postcss',
       options: {
